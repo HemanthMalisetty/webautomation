@@ -8,10 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait
 
 import java.util.stream.Collectors
 
-
-/**
- * Created by Jordan on 5/2/17.
- */
 open class DriverHelper {
     protected var defaultWaitTime = 20
     var dhs = SelectHelper()
