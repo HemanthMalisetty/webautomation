@@ -15,7 +15,7 @@ open class DriverHelper {
         protected set
 
     @JvmOverloads
-    open fun click(locator: By, message: String  = "$locator  cannot be clicked"git ) {
+    open fun click(locator: By, message: String  = "$locator  cannot be clicked" ) {
         waitForElementToBeClickable(locator, message)
 
         WebDriverWait(driver, 5).until(object : ExpectedCondition<Boolean> {
