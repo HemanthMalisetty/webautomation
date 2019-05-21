@@ -77,7 +77,7 @@ public class PermissioningGroupBase<T extends PermissioningGroupBase> extends Ad
     
     public String getParkReportingLevel()
     {
-        return dh.getDhs().getSelectedOption(by.parkReportingLevel);
+        return dh.getDhs().getSelectedOptionText(by.parkReportingLevel);
     }
     
     public boolean isParkReportingLevelDisplayed()
@@ -107,7 +107,7 @@ public class PermissioningGroupBase<T extends PermissioningGroupBase> extends Ad
     
     public String getJobCode()
     {
-        return dh.getDhs().getSelectedOption(by.jobCode);
+        return dh.getDhs().getSelectedOptionText(by.jobCode);
     }
     
     public boolean isJobCodeDisplayed()
@@ -122,7 +122,7 @@ public class PermissioningGroupBase<T extends PermissioningGroupBase> extends Ad
     
     public String getPermissioningAccess()
     {
-        return dh.getDhs().getSelectedOption(by.permissioningAccess);
+        return dh.getDhs().getSelectedOptionText(by.permissioningAccess);
     }
     
     public boolean isPermissioningAccessDisplayed()
@@ -137,7 +137,7 @@ public class PermissioningGroupBase<T extends PermissioningGroupBase> extends Ad
     
     public String getPositionNumber()
     {
-        return dh.getDhs().getSelectedOption(by.positionNumber);
+        return dh.getDhs().getSelectedOptionText(by.positionNumber);
     }
     
     public boolean isPositionNumberDisplayed()

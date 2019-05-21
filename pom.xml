@@ -9,18 +9,13 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
-		<testngXmlDir>src/test/resources/universalOrlandoConfig</testngXmlDir>
+		<testngXmlDir>src/test/resources/xmls</testngXmlDir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<reportium-sdk.version>1.0.0</reportium-sdk.version>
 		<selenium.version>2.53.1</selenium.version>
 		<testng.version>6.9.10</testng.version>
-		<cukes.version>1.2.5</cukes.version>
-		<qaf.version>2.1.11-RC1</qaf.version>
-		<quantum.version>1.9-RC</quantum.version>
-		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<kotlin.version>1.2.10</kotlin.version>
+		<kotlin.version>1.3.21</kotlin.version>
 	</properties>
 
 	<profiles>
@@ -69,154 +64,7 @@
 				</plugins>
 			</build>
 		</profile>
-		<profile>
-			<id>Phone: iPhone 7</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceName>D8E2BD6BA91CC95D57B8783C27555336B2F6E67D</deviceName>
-								<deviceNameLocal>iPhone 7</deviceNameLocal>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: iPhone 7 Plus</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceNameLocal>iPhone 7 Plus</deviceNameLocal>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: iPhone 6 Plus</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceNameLocal>iPhone 6 Plus</deviceNameLocal>
-								<deviceName>9A72917FF7B5109B54FD96C4C56A6C128E23F018</deviceName>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: iPhone 6s</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceNameLocal>iPhone 6s</deviceNameLocal>
-								<deviceName>B1F2C77A2778E8BFE1B0E94D16A431A04449F36B</deviceName>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: iPhone 6</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceNameLocal>iPhone 6</deviceNameLocal>
-								<deviceName>7F8C4E2FC7C5B066906FE890439578F7D371CA99</deviceName>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: Samsung GS6</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceName>10160ACB45A43303</deviceName>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: Pixel 2 XL API 27</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceNameLocal>Pixel 2 XL API 27</deviceNameLocal>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: Nexus S</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<isDesktop>false</isDesktop>
-								<deviceName>Nexus S</deviceName>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>Phone: Pixel</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<deviceName>FA6BN0301904</deviceName>
-								<isDesktop>false</isDesktop>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
+
 		<profile>
 			<id>Env: LOCALHOST</id>
 			<build>
@@ -445,29 +293,16 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>perfectomobile</id>
-			<name>Perfecto mobile</name>
-			<url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-core</artifactId>
-			<version>1.3</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.hamcrest</groupId>-->
+			<!--<artifactId>hamcrest-core</artifactId>-->
+			<!--<version>1.3</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-		</dependency>
-		<dependency>
-			<groupId>com.perfecto.reporting-sdk</groupId>
-			<artifactId>reportium-java</artifactId>
-			<version>RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -484,31 +319,12 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.4.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20160810</version>
-		</dependency>
-		<dependency>
-			<groupId>net.lightbody.bmp</groupId>
-			<artifactId>browsermob-core</artifactId>
-			<version>2.1.4</version>
-		</dependency>
-		<dependency>
-			<groupId>com.perfectomobile</groupId>
-			<artifactId>intellij-connector</artifactId>
-			<version>10.10.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.perfectomobile</groupId>
-			<artifactId>pm-webdriver</artifactId>
-			<version>10.10.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>5.0.4</version>
-		</dependency>
+
+		<!--<dependency>-->
+			<!--<groupId>net.lightbody.bmp</groupId>-->
+			<!--<artifactId>browsermob-core</artifactId>-->
+			<!--<version>2.1.4</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -521,7 +337,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-stdlib-jre8</artifactId>
+			<artifactId>kotlin-stdlib-jdk8</artifactId>
 			<version>${kotlin.version}</version>
 		</dependency>
 		<dependency>
@@ -530,10 +346,11 @@
 			<version>${kotlin.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>2.0.8</version>
-		</dependency>
+
+		<!--<dependency>-->
+			<!--<groupId>org.apache.pdfbox</groupId>-->
+			<!--<artifactId>pdfbox</artifactId>-->
+			<!--<version>2.0.8</version>-->
+		<!--</dependency>-->
 	</dependencies>
 </project>

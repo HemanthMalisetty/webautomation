@@ -115,7 +115,7 @@ public class ACPGroupSettingsBase<T extends ACPGroupSettingsBase> extends AddEdi
     
     public String getTheme()
     {
-        return dh.getDhs().getSelectedOption(by.theme);
+        return dh.getDhs().getSelectedOptionText(by.theme);
     }
     
     public boolean isThemeDisplayed()

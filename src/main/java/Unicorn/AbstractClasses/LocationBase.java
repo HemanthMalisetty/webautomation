@@ -97,7 +97,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
 
     public String getCategory()
     {
-        return dh.getDhs().getSelectedOption(by.category);
+        return dh.getDhs().getSelectedOptionText(by.category);
     }
 
     public boolean isCategoryDisplayed()
@@ -113,7 +113,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
 
     public String getExternalAttraction()
     {
-        return dh.getDhs().getSelectedOption(by.externalAttraction);
+        return dh.getDhs().getSelectedOptionText(by.externalAttraction);
     }
 
     public boolean isExternalAttractionDisplayed()
@@ -164,7 +164,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
     
     public String getLocationType()
     {
-        return dh.getDhs().getSelectedOption(by.locationType);
+        return dh.getDhs().getSelectedOptionText(by.locationType);
     }
     
     public boolean isLocationTypeDisplayed()
@@ -196,7 +196,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
     
     public String getParent()
     {
-        return dh.getDhs().getSelectedOption(by.parent);
+        return dh.getDhs().getSelectedOptionText(by.parent);
     }
     
     public boolean isParentDisplayed()
@@ -250,7 +250,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
     }
     public String getZones()
     {
-        return dh.getDhs().getSelectedOption(by.zones);
+        return dh.getDhs().getSelectedOptionText(by.zones);
     }
     
     public boolean isZonesDisplayed()
@@ -283,7 +283,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
     
     public String getOperatingState()
     {
-        return dh.getDhs().getSelectedOption(by.operatingState);
+        return dh.getDhs().getSelectedOptionText(by.operatingState);
     }
     
     public boolean isOperatingStateDisplayed()
@@ -520,7 +520,7 @@ public abstract class LocationBase<T extends LocationBase> extends AddEditBase<L
     
     public String getState()
     {
-        return dh.getDhs().getSelectedOption(by.state);
+        return dh.getDhs().getSelectedOptionText(by.state);
     }
     
     public boolean isStateDisplayed()

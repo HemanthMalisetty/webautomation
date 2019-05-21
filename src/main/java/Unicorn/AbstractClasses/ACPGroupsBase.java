@@ -71,7 +71,7 @@ public class ACPGroupsBase<T extends ACPGroupsBase> extends AddEditBase<ACPGroup
 
     public String getLocation()
     {
-        return dh.getDhs().getSelectedOption(by.location);
+        return dh.getDhs().getSelectedOptionText(by.location);
     }
 
     public boolean isLocationDisplayed()
@@ -87,7 +87,7 @@ public class ACPGroupsBase<T extends ACPGroupsBase> extends AddEditBase<ACPGroup
 
     public String getACPGroupSetting()
     {
-        return dh.getDhs().getSelectedOption(by.ACPGroupSetting);
+        return dh.getDhs().getSelectedOptionText(by.ACPGroupSetting);
     }
 
     public boolean isACPGroupSettingDisplayed()

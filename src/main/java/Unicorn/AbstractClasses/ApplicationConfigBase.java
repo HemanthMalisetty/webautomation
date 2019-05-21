@@ -91,7 +91,7 @@ public class ApplicationConfigBase<T extends ApplicationConfigBase> extends AddE
     
     public String getPlatform()
     {
-        return dh.getDhs().getSelectedOption(by.operatingSystem);
+        return dh.getDhs().getSelectedOptionText(by.operatingSystem);
     }
     
     public boolean isOperatingSystemDisplayed()

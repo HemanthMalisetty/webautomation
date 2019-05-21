@@ -17,7 +17,6 @@ public class EditUser extends UnicornPageBase<EditUser> {
         dh.waitForTitle(title);
         dh.waitForUnicorn();
         log("Navigated to:" + title);
-        updateTestStep(title);
         return this;
     }
     private class EditUserBy {

@@ -107,7 +107,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getFirmwareVersion()
     {
-        return dh.getDhs().getSelectedOption(by.firmwareVersion);
+        return dh.getDhs().getSelectedOptionText(by.firmwareVersion);
     }
 
     public boolean isFirmwareVersionDisplayed()
@@ -144,7 +144,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getType()
     {
-        return dh.getDhs().getSelectedOption(by.type);
+        return dh.getDhs().getSelectedOptionText(by.type);
     }
 
     public boolean isTypeDisplayed()
@@ -165,7 +165,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getColor()
     {
-        return dh.getDhs().getSelectedOption(by.color);
+        return dh.getDhs().getSelectedOptionText(by.color);
     }
 
     public boolean isColorDisplayed()
@@ -186,7 +186,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getStatus()
     {
-        return dh.getDhs().getSelectedOption(by.status);
+        return dh.getDhs().getSelectedOptionText(by.status);
     }
 
     public boolean isStatusDisplayed()
@@ -202,7 +202,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getState()
     {
-        return dh.getDhs().getSelectedOption(by.state);
+        return dh.getDhs().getSelectedOptionText(by.state);
     }
 
     public boolean isStateDisplayed()
@@ -218,7 +218,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getLifecycleState()
     {
-        return dh.getDhs().getSelectedOption(by.lifecycleState);
+        return dh.getDhs().getSelectedOptionText(by.lifecycleState);
     }
 
     public boolean isLifecycleStateDisplayed()
@@ -250,7 +250,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getLocationState()
     {
-        return dh.getDhs().getSelectedOption(by.locationState);
+        return dh.getDhs().getSelectedOptionText(by.locationState);
     }
 
     public boolean isLocationStateDisplayed()
@@ -266,7 +266,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getDisposedReason()
     {
-        return dh.getDhs().getSelectedOption(by.disposedReason);
+        return dh.getDhs().getSelectedOptionText(by.disposedReason);
     }
 
     public boolean isDisposedReasonDisplayed()
@@ -299,7 +299,7 @@ public class EditManifest extends AddEditBase<ManifestDetails>{
 
     public String getRepairReason()
     {
-        return dh.getDhs().getSelectedOption(by.repairReason);
+        return dh.getDhs().getSelectedOptionText(by.repairReason);
     }
 
     public boolean isRepairReasonDisplayed()

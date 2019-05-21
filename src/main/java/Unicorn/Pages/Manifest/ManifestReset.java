@@ -46,7 +46,7 @@ public class ManifestReset extends UnicornPageBase<ManifestReset> {
 
     public String getFirmwareVersion()
     {
-        return dh.getDhs().getSelectedOption(by.firmwareVersion);
+        return dh.getDhs().getSelectedOptionText(by.firmwareVersion);
     }
 
     public boolean isFirmwareVersionDisplayed()

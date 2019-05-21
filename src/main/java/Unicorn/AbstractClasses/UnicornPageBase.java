@@ -39,7 +39,6 @@ public abstract class UnicornPageBase<H extends UnicornPageBase> extends PageBas
     }
     public void log(String message) {
         logger.info(message);
-        updateTestStep(message);
         System.out.println(message);
     }
     public String getHeader(){ return dh.getText(by.header); }

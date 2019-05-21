@@ -128,7 +128,7 @@ public class ACPsBase<T extends ACPsBase> extends AddEditBase<ACP> {
 
     public String getAcpGroup()
     {
-        return dh.getDhs().getSelectedOption(by.acpGroup);
+        return dh.getDhs().getSelectedOptionText(by.acpGroup);
     }
 
     public boolean isAcpGroupDisplayed()

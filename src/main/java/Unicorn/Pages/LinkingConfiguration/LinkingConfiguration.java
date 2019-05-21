@@ -17,7 +17,6 @@ public class LinkingConfiguration extends UnicornPageBase<LinkingConfiguration>{
         dh.waitForTitle(title);
         dh.waitForUnicorn();
         log("Navigated to:" + title);
-        updateTestStep(title);
         return this;
     }
     public LinkingConfiguration get()

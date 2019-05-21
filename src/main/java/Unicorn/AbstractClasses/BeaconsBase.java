@@ -158,7 +158,7 @@ public class BeaconsBase<T extends BeaconsBase> extends AddEditBase<Beacons> {
     
     public String getSource()
     {
-        return dh.getDhs().getSelectedOption(by.source);
+        return dh.getDhs().getSelectedOptionText(by.source);
     }
     
     public boolean isSourceDisplayed()
@@ -174,7 +174,7 @@ public class BeaconsBase<T extends BeaconsBase> extends AddEditBase<Beacons> {
 
     public String getLocation()
     {
-        return dh.getDhs().getSelectedOption(by.location);
+        return dh.getDhs().getSelectedOptionText(by.location);
     }
 
     public boolean isLocationDisplayed()
@@ -190,7 +190,7 @@ public class BeaconsBase<T extends BeaconsBase> extends AddEditBase<Beacons> {
 
     public String getType()
     {
-        return dh.getDhs().getSelectedOption(by.type);
+        return dh.getDhs().getSelectedOptionText(by.type);
     }
 
     public boolean isTypeDisplayed()

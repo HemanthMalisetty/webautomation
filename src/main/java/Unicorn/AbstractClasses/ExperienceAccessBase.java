@@ -158,7 +158,7 @@ public class ExperienceAccessBase<T extends ExperienceAccessBase> extends AddEdi
 
     public String getLocation()
     {
-        return dh.getDhs().getSelectedOption(by.location);
+        return dh.getDhs().getSelectedOptionText(by.location);
     }
 
     public boolean isLocationDisplayed()

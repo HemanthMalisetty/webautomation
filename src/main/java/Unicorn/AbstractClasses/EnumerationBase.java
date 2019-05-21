@@ -55,7 +55,7 @@ public class EnumerationBase<T extends EnumerationBase> extends AddEditBase<Enum
     }
     public String getKey()
     {
-        return dh.getDhs().getSelectedOption(by.key);
+        return dh.getDhs().getSelectedOptionText(by.key);
     }
     public boolean isKeyDisplayed()
     {

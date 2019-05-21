@@ -36,11 +36,4 @@ public abstract class PageBase
 		System.out.println(message);
 
 	}
-
-	protected void updateTestStep(String testStepName)
-	{
-		//log("Navigating to: " + testStepName);
-		if(!Session.isLocal() && Session.getGrid().toLowerCase().equals("perfecto"))
-			Session.getReportiumClient().testStep(testStepName);
-	}
 }

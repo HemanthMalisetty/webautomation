@@ -24,7 +24,6 @@ public class Orders<T extends Orders> extends PageComponentBase<Orders> {
         dh.waitForTitle(title);
         dh.waitForUnicorn();
         log("Navigated to:" + title);
-        updateTestStep(title);
         return this;
     }
     @Override
@@ -131,7 +130,7 @@ public class Orders<T extends Orders> extends PageComponentBase<Orders> {
 
     public String getSearchType()
     {
-        return dh.getDhs().getSelectedOption(by.searchType);
+        return dh.getDhs().getSelectedOptionText(by.searchType);
     }
 
     public boolean isSearchTypeDisplayed()

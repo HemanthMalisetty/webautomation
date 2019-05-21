@@ -17,7 +17,6 @@ public class Users extends UnicornPageBase<Users> {
         dh.waitForTitle(title);
         dh.waitForUnicorn();
         log("Navigated to:" + title);
-        updateTestStep(title);
         return this;
     }
     private class UsersBy {

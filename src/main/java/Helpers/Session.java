@@ -1,7 +1,7 @@
 package Helpers;
 
-import com.perfecto.reportium.client.ReportiumClient;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 public class Session
 {
 	private static String env = null,grid = null, browser = null;
-	private static ThreadLocal<ReportiumClient> reportiumClients = new ThreadLocal<>();
 	private static LocalDateTime startTime;
 	private static Boolean local, isDesktop;
 	private static String excelHeader;
@@ -21,6 +20,12 @@ public class Session
 		Session.local = local;
 		startTime = LocalDateTime.now();
 		Session.isDesktop = isDesktop;
+	}
+	public Session(String browser, String env)
+	{
+		setBrowser(browser);
+		setEnv(env);
+		startTime = LocalDateTime.now();
 	}
 	public static void setExcelHeader(String header)
 	{
@@ -46,15 +51,6 @@ public class Session
 		return env;
 	}
 
-	public void setReportiumClient(ReportiumClient reportiumClient)
-	{
-		reportiumClients.set(reportiumClient);
-	}
-
-	public static ReportiumClient getReportiumClient()
-	{
-		return reportiumClients.get();
-	}
 
 	public static LocalDateTime getStartTime()
 	{

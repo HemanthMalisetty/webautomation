@@ -1,5 +1,4 @@
 package Unicorn.AbstractClasses;
-import Unicorn.AbstractClasses.UnicornPageBase;
 import Unicorn.Pages.WaitTimeBoard.WaitTimeBoards;
 import Unicorn.UnicornDriverHelper;
 import org.openqa.selenium.By;
@@ -68,7 +67,7 @@ public abstract class WaitTimeBoardsBase<T extends WaitTimeBoardsBase> extends A
 
     public String getParent()
     {
-        return dh.getDhs().getSelectedOption(by.parent);
+        return dh.getDhs().getSelectedOptionText(by.parent);
     }
 
     public boolean isParentDisplayed()
@@ -89,7 +88,7 @@ public abstract class WaitTimeBoardsBase<T extends WaitTimeBoardsBase> extends A
     }
     public String getLocation()
     {
-        return dh.getDhs().getSelectedOption(by.location);
+        return dh.getDhs().getSelectedOptionText(by.location);
     }
 
     public boolean isLocationDisplayed()
@@ -105,7 +104,7 @@ public abstract class WaitTimeBoardsBase<T extends WaitTimeBoardsBase> extends A
 
     public String getType()
     {
-        return dh.getDhs().getSelectedOption(by.type);
+        return dh.getDhs().getSelectedOptionText(by.type);
     }
 
     public boolean isTypeDisplayed()

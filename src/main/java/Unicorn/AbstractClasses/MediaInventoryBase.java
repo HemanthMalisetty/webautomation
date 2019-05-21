@@ -81,7 +81,7 @@ public class MediaInventoryBase<T extends MediaInventoryBase> extends AddEditBas
     }
     public String getLocationState()
     {
-        return dh.getDhs().getSelectedOption(by.locationState);
+        return dh.getDhs().getSelectedOptionText(by.locationState);
     }
 
     public boolean isLocationStateDisplayed()
@@ -209,7 +209,7 @@ public class MediaInventoryBase<T extends MediaInventoryBase> extends AddEditBas
 
     public String getType()
     {
-        return dh.getDhs().getSelectedOption(by.type);
+        return dh.getDhs().getSelectedOptionText(by.type);
     }
 
     public boolean isTypeDisplayed()
@@ -241,7 +241,7 @@ public class MediaInventoryBase<T extends MediaInventoryBase> extends AddEditBas
 
     public String getStatus()
     {
-        return dh.getDhs().getSelectedOption(by.status);
+        return dh.getDhs().getSelectedOptionText(by.status);
     }
 
     public boolean isStatusDisplayed()
@@ -257,7 +257,7 @@ public class MediaInventoryBase<T extends MediaInventoryBase> extends AddEditBas
 
     public String getColor()
     {
-        return dh.getDhs().getSelectedOption(by.color);
+        return dh.getDhs().getSelectedOptionText(by.color);
     }
 
     public boolean isColorDisplayed()
@@ -273,7 +273,7 @@ public class MediaInventoryBase<T extends MediaInventoryBase> extends AddEditBas
 
     public String getLifeCycleState()
     {
-        return dh.getDhs().getSelectedOption(by.lifeCycleState);
+        return dh.getDhs().getSelectedOptionText(by.lifeCycleState);
     }
 
     public boolean isLifeCycleStateDisplayed()
