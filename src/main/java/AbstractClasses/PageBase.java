@@ -8,16 +8,16 @@ import org.slf4j.LoggerFactory;
 public abstract class PageBase
 {
 	private DriverHelper dh = new DriverHelper();
-	protected String url = null;
-	public final Logger logger = LoggerFactory.getLogger(getClass());
+	protected String url = null, title = null;
+	private final Logger logger = LoggerFactory.getLogger(getClass());
 
 
 	public PageBase()
 	{
 		if (!Session.getEnv().toLowerCase().equals("localhost"))
-			url = "https://services-"+ Session.getEnv().toLowerCase();
+			url = "https://"+ Session.getEnv().toLowerCase()+ "-client.frontlineinsurance.com/policies";
 		else
-			url = "http://localhost:4200/";
+			url = "http://localhost/amp-portal-non-minified/app/html/index.html#/home";
 	}
 
 	protected void getUrl()

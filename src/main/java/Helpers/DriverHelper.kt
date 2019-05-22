@@ -38,6 +38,7 @@ open class DriverHelper {
         })
     }
 
+
     @JvmOverloads
     open fun click(xpath: String, message: String = "$xpath  cannot be clicked", waitTime: Int = defaultWaitTime) {
         click(By.xpath(xpath), message, waitTime)
@@ -88,6 +89,18 @@ open class DriverHelper {
 
     fun findElement(xpath: String): WebElement = findElement(By.xpath(xpath))
 
+    fun waitForTitle(title: String) {
+        WebDriverWait(driver, 20).until(object : ExpectedCondition<Boolean> {
+            override fun apply(webDriver: WebDriver?): Boolean? {
+                return webDriver!!.title == title
+
+            }
+
+            override fun toString(): String {
+                return "Timeout exceeded waiting for: $title to load"
+            }
+        })
+    }
 
     fun isSelected(locator: By): Boolean {
         waitForElementToExist(locator)
@@ -102,6 +115,9 @@ open class DriverHelper {
             return false
         }
     }
+
+    fun isDisplayed(xpath : String) = isDisplayed(By.xpath(xpath))
+
 
     fun isSelected(xpath: String): Boolean = isSelected(By.xpath(xpath))
 

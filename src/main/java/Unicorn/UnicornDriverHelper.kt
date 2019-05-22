@@ -9,18 +9,18 @@ import org.openqa.selenium.support.ui.WebDriverWait
 
 class UnicornDriverHelper : DriverHelper() {
     private val dh = DriverHelper()
-    fun waitForTitle(title: String) {
-        WebDriverWait(dh.driver, 20).until(object : ExpectedCondition<Boolean> {
-            override fun apply(webDriver: WebDriver?): Boolean? {
-                return webDriver!!.title == title
-
-            }
-
-            override fun toString(): String {
-                return "Timeout exceeded waiting for: $title to load"
-            }
-        })
-    }
+//    fun waitForTitle(title: String) {
+//        WebDriverWait(dh.driver, 20).until(object : ExpectedCondition<Boolean> {
+//            override fun apply(webDriver: WebDriver?): Boolean? {
+//                return webDriver!!.title == title
+//
+//            }
+//
+//            override fun toString(): String {
+//                return "Timeout exceeded waiting for: $title to load"
+//            }
+//        })
+//    }
 
     fun waitForUnicorn() {
         WebDriverWait(dh.driver, 25).until(object : ExpectedCondition<Boolean> {

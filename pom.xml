@@ -89,7 +89,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<systemPropertyVariables>
-								<env>QA</env>
+								<env>QAI</env>
 							</systemPropertyVariables>
 						</configuration>
 					</plugin>

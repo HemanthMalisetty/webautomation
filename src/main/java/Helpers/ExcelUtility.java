@@ -21,7 +21,7 @@ public class ExcelUtility {
 
     private static final String extension= ".xlsx";
     public static final Path    Unicorn = Paths.get("src/test/resources/AppData/Unicorn" + extension);
-    public static Map<String, String> getDataFromVerticalSheetMap(Path path, String sheetName, String key) { ;
+    public static Map<String, String> getDataFromVerticalSheetMap(Path path, String sheetName, String key) {
         // Initialize variables
         final String filename = path.toString();//+ File.separator + strFileName;
         DataFormatter df = new DataFormatter();
